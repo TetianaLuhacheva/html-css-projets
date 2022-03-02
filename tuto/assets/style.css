@@ -1,0 +1,127 @@
+/* main menu */
+
+.manu-mageur{
+  position: fixed;
+  z-index:1;    
+  width: 100%;  
+}
+.manu-left-side{
+  position: inherit;
+  width: 50%;  
+  float: left;
+  z-index:1;
+  box-shadow:5px 10px 18px #262626;
+
+}
+.manu-right-side{
+  position: inherit;
+  width: 50%;  
+  float: left;    
+  box-shadow:5px 10px 18px #888888;
+}
+ 
+
+/* Body */
+
+.left-side{ 
+    margin-top: 5.9vh;
+    width: 50%; 
+    height: 94.1vh;  
+    float: left;
+    overflow: scroll; 
+}
+
+.right-side{ 
+  margin-top: 5.9vh;
+    width: 50%; 
+    height: 94.1vh;
+    float:left; 
+}
+ 
+
+/* Image Account */
+
+
+.img-account-menu{
+    border-radius: 50%;
+} 
+.thumb1 { 
+    background: url(https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg) 40% 50% no-repeat; /* 50% 50% centers image in div */
+    width: 40px;
+    height: 40px;
+    background-size: 65px;
+  }
+ 
+
+  .thumb2 { 
+    background: url(https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg) 40% 50% no-repeat; /* 50% 50% centers image in div */
+    width: 200px;
+    height: 200px; 
+    background-size: 400px;
+  }
+ 
+
+/* dropdown-account */
+  
+  .dropdown-account {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content-account {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    margin: 0 -120px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content-account a {
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content-account a:hover {background-color: #ddd;}
+  
+  .dropdown-account:hover .dropdown-content-account {display: block;}
+  
+  
+  .screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/030/594/080/large/gthl-art-sky-sketch-kimi-no-nawa.jpg);
+    
+
+  }
+
+
+
+  
+  .screen-profile-image{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url("https://i.postimg.cc/2yCdM6nQ/image-01.jpg");   
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 9, 9);
+    background-size: 200vh; 
+    background-position-x: center;
+    background-position-y: center;
+    height: 94.1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-attachment: fixed;
+}
+
+
+
+  /* custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }

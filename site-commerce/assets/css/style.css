@@ -1,0 +1,422 @@
+body { 
+	margin: 0;
+    padding: 0;
+    font-family:Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+/* NAV */
+
+
+nav{ 
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul{ 
+    list-style: none;
+    padding: 0;
+	margin: 0;    
+}
+nav  > ul > li.mar-top-bottom-14{     
+    margin: 14px 0 14px 0; 
+} 
+nav > ul.left {
+	width: 20rem;
+    background-color: blue;
+    display: flex;
+    justify-content: left;
+    float: left; 
+}
+nav > div.midle { 
+    float: left;   
+
+}
+nav > ul.right { 
+	width: 40rem;
+    display: flex;
+    justify-content: flex-end;	
+    
+    background-color: coral;
+} 
+
+nav > ul > li {
+    padding: 0 17px 0 17px;
+}
+
+
+
+
+/* ACCOUNT IN MENU */
+
+
+#image-profile-name{
+    margin: 14px 7px 14px 0; 
+    float: left;
+}
+#image-profile-menu{ 
+    border-radius: 50%;
+    background-color: cadetblue;
+    width: 45px;
+    height:45px;
+    display: flex; 
+    margin-top: 4px; 
+} 
+
+
+
+
+
+/* DROP DOWN */
+
+
+
+.hiden-menu{
+    background-color: darkorange;
+    display: none;
+}
+
+.drop-icon{
+    background: rgb(49, 11, 58);
+    color: #f1f1f1;  
+    font-size: 2rem;
+    display: flex;
+    float: left; 
+    padding: 9px;    
+}
+
+.new-im{
+    border-radius: 50%;
+    background-color: #3e8e41;
+    width:45px;
+    height: 45px;
+}
+.dropbtn-nav {
+    background-color: #04AA6D;  
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;   
+ 
+  }
+  
+  .dropdown-nav {   
+    background-color: darkmagenta;
+    position: relative;
+    display: inline-block;
+    justify-content: center;      
+  }
+  
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` OPTIMISWER */
+  .dropdown-content-nav {
+    display: none;
+ 
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .dropdown-content-nav a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+
+
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+
+
+/* SOUS MENU */
+#sous-menu{
+    background-color: cornflowerblue; 
+    display: flex;
+    flex-direction: row;    
+    padding: 10px;
+}
+
+#sous-menu >  div.text{
+    background-color: chartreuse; 
+}
+#sous-menu > div > ul{
+    display: flex;    
+    list-style: none; 
+    margin: 0;
+}
+
+#sous-menu > div > ul > li{ 
+    list-style: none;  
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+ 
+/* CATEGORIE */
+
+div#categorie{
+    background-color: darksalmon; 
+    display: flex; 
+    color: #000;
+}
+
+div#categorie > ul{ 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: hotpink;
+    list-style: none;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div#categorie > ul > li{
+    background-color: yellowgreen;
+    border: rgb(121, 121, 121) 1px solid;
+    width: 100%;
+    height: 3vh;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+/* Advertising */
+
+#advertising{
+    background-color: rgb(210, 210, 255);
+    height: 20vh;
+    overflow: auto; 
+    white-space: nowrap;   
+    display: flex;
+    
+}
+
+.item{
+    background-color: aqua;
+    width: 15rem;
+    height: 13rem;
+    padding: 10px;
+    float: left;
+}
+.image{
+    width: 100%;
+    height: 60%;
+    background-color: #dadada;
+}
+.mots-cles{
+    background-color: #b1ffce;
+    height: 20%;
+    display: block;
+}
+.price{
+    text-align: end;
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 20%;
+    background-color: #fff956;
+}
+
+
+
+
+/* Content */
+
+#content-type {
+    background-color: rgb(139, 9, 0);
+    height: 10vh;
+    margin: 0;
+
+}
+
+#content-type > .type > ul {
+    list-style: none;
+    display: flex;
+    
+    justify-content: space-between;
+}
+#content-grid{
+    background-color: rgb(94, 255, 0);
+    height: 50vh;
+
+}
+
+#content-grid > .left{
+    background-color: rgb(241, 255, 204); 
+    display: flex;
+    float: left;
+    width: 20%;
+    height: 100%;
+
+}
+
+#content-grid > .right{
+    background-color: rgb(147, 216, 253);  
+
+}
+
+
+#footer{
+    background-color: rgb(64, 89, 173);
+    height: 10vh;
+
+
+}
+
+.back-to-top{
+    background-color: rgb(230, 152, 110);
+    height: 10vh;
+    
+}
+
+.footer-menu{
+    background-color: rgb(133, 101, 143);
+    height: 10vh;
+    
+}
+.custom-pages{
+    
+    background-color: rgb(214, 247, 194);
+    height: 10vh;
+}
+.authers{    
+    background-color: rgb(27, 12, 68);
+    height: 10vh;
+}
+.partners{
+    background-color: rgb(196, 88, 130);
+    height: 10vh;
+}
+
+.initials{
+    border-top: rgb(36, 36, 36) solid 1px;
+    background-color: rgb(216, 123, 253);
+    height: 10vh;
+    
+} 
+
+/* 0. Account in drop menu au ther right
+/* 1. MY SITE COMMERCE AT RIGHT
+/* 2. Question ALIGN BY VERTICAL
+/* 3. MDN Reference
+/* 4. Double menuMDN Reference
+
+/*************************************************/
+/*************************************************/
+/**********            MEDIA              ********/
+/*************************************************/
+/*************************************************/
+
+
+@media screen and (max-width:1600px) {     
+    
+    
+    /* NAV */
+
+
+    nav{
+        flex-direction: column;                 
+    }
+
+    nav > ul.left {
+        width: 100%; 
+        flex-direction: column;
+        align-items: center;
+
+        display: none;
+    }
+
+    nav > div.midle { 
+        flex-direction: column;
+        align-items: center;
+        
+        display: none;
+    }
+
+    nav  > ul.right {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+        display: none;
+    }
+
+    
+
+    /* DROP DOWN */
+
+
+    .hiden-menu{
+        display: block;
+    }
+    .hiden-menu > div > a{
+        background-color: rgb(146, 255, 195);
+
+    }
+ 
+    #image-profile-name{
+        background-color: deeppink;
+        margin: 14px 7px 14px 0;  
+    }
+    #image-profile-menu{ 
+        border-radius: 50%;
+        background-color: rgb(47, 248, 255);
+        border: rgb(189, 189, 189) solid 1px;
+        width: 45px;
+        height:45px;
+        display: flex; 
+        margin-top: 4px; 
+    }  
+
+    .dropbtn-nav {        
+        display:block; 
+    }
+    .dropdown-nav { 
+        display: flex;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width:700px) {     
+    #sous-menu{
+        min-width: 1000px;
+    }
+    
+    div#categorie > ul{ 
+        margin: 0;
+        padding: 0;
+        width: none;
+        background-color: hotpink;
+        list-style: none;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}

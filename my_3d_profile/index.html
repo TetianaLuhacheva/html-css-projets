@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetiana LUHACHEVA</title>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .square{
+            padding: 40px;
+            height: 100vh;
+
+        }
+        .menu {
+          float: left;
+          width: 20%;
+          text-align: center;
+        }
+        
+        .menu a {
+          background-color: #e5e5e500;
+          padding: 8px;
+          margin-top: 7px;
+          display: block;
+          width: 100%;
+          color: black;
+          text-decoration: none;
+        }
+
+        .menu a:hover { 
+          color: rgb(204, 143, 143); 
+          text-decoration: overline;
+        }
+
+        .main {
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+        }
+        
+        .right { 
+          border-left: #303030 2px solid;
+          float: left; 
+          width: 20%;
+          padding: 15px;
+          margin-top: 7px;
+          text-align: center; 
+        }
+
+        .about-me{      
+            padding: 20vh;
+            height: 94.1vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-account-menu{
+          border-radius: 50%;
+
+          width: var(--image-size);
+          height: var(--image-size); 
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          border-radius: 25% 75% / 50%;
+          cursor: help;
+
+          
+        }
+
+        .header{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url("https://i.postimg.cc/2yCdM6nQ/image-01.jpg");   
+            color: rgb(255, 255, 255);
+            background-color: rgb(9, 9, 9);
+            background-size: 200vh; 
+            background-position-x: center;
+            background-position-y: center;    
+
+        }
+
+        .screen{        
+            height: 87.5vh;            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            background-attachment: fixed;
+        }
+       
+
+        .th-t-pad-60{
+            padding: 10px 10px; 
+        }
+        .th-t-pad-30{
+            padding: 10px 40px; 
+        }
+
+        .image-program{
+            width: 20%;
+        }
+
+         
+ 
+        .icons > ul{             
+            width: 80vh;
+            color: rgb(255, 255, 255);  
+            list-style: none;          
+            margin: 0; 
+            justify-content: space-between;
+            display: flex; 
+        }
+        
+        .specialization > ul{              
+            width: 100vh;
+            color: rgb(255, 255, 255);
+            justify-content:space-between;
+            list-style: none; 
+            margin: 0; 
+            display: flex;
+                  
+        } 
+ 
+        .tags > ul{              
+            padding: 10px 100px 40px 50px; 
+            width: 100%;
+            justify-content:space-between;
+            list-style: none; 
+            margin: 0; 
+            display: flex;
+                  
+        } 
+        .tags-special-link{
+            color: rgb(99, 36, 36); 
+            text-decoration: none;
+        }
+
+        .tags-special-link:hover {
+            color: rgb(58, 0, 0); 
+            text-decoration:overline;
+        }
+        .special-link{
+            color: rgb(219, 224, 253); 
+            text-decoration: none;
+        }
+        .special-link:hover {
+            color: rgb(255, 255, 255); 
+            text-decoration:overline;
+        }
+ 
+        @media only screen and (max-width: 620px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+          }
+        }
+
+        .bottom{ 
+          text-align: center;
+          padding: 20px;
+        }
+
+
+        /* custom scrollbar */
+        ::-webkit-scrollbar { 
+          
+          width: 1px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color:  rgb(186, 89, 89); 
+          border: 0.5px solid transparent; 
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+          background-color:rgb(58, 21, 21); 
+        }
+        
+
+    </style>
+</head>
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+    
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a style="padding-left: 100px;" class="navbar-brand" href="#">PORTFOLIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 90vh;padding-left: 100px;">
+              <li class="nav-item" style="padding-right: 50px;" >
+                <a class="nav-link active" aria-current="page" href="#">Aceuille</a>
+              </li>
+              <li class="nav-item" style="padding-right: 50px;" >
+                <a class="nav-link active" aria-current="page" href="#">Tuto</a>
+              </li>
+              <li class="nav-item" style="padding-right: 50px;" >
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown" style="padding-right: 50px;" >
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  My work
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">       
+                  <li><a class="dropdown-item" href="#">Characters</a></li>
+                  <li><a class="dropdown-item" href="#">Crafts</a></li>
+                  <li><a class="dropdown-item" href="#">Clothes</a></li>
+                  <li><a class="dropdown-item" href="#">Environnement</a></li>
+                  <li><a class="dropdown-item" href="#">Interiors</a></li>
+                  <li><a class="dropdown-item" href="#">Visual Effects</a></li>
+                  <li><a class="dropdown-item" href="#">Rendering</a></li>
+                  <li><a class="dropdown-item" href="#">Visualization</a></li>
+                  <li><a class="dropdown-item" href="#">Animation</a></li> 
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">my ART STATION</a></li>
+                  <li><a class="dropdown-item" href="#">my INSTAGRAM</a></li>
+                  <li><a class="dropdown-item" href="#">my YOUTUBE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">open for work > tetianan.luhacheva@hneu,net</a>
+              
+            </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- BODY -->
+    <div class="header">
+      <div class="screen">
+        
+
+        <div class="specialization">
+          <ul>                 
+            <li><a class="special-link" href="#">Characters</a></li>
+            <li><a class="special-link" href="#">Crafts</a></li>
+            <li><a class="special-link" href="#">Clothes</a></li>
+            <li><a class="special-link" href="#">Environnement</a></li>
+            <li><a class="special-link" href="#">Interiors</a></li>
+            <li><a class="special-link" href="#">Visual Effects</a></li>
+            <li><a class="special-link" href="#">Rendering</a></li>
+            <li><a class="special-link" href="#">Visualization</a></li>
+            <li><a class="special-link" href="#">Animation</a></li> 
+          </ul>
+        </div>
+        
+          <img style="width: 500px; padding: 50px 0 55px" src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" alt="Account" class="img-account-menu" >
+          <h1>3D ARTIST</h1>
+          <p style="padding-bottom: 25px">Tetiana LUHACHEVA</p>
+          <div class="icons" style="padding: 0 0 50px">
+            <ul>  
+              <li><a class="special-link" href="#"><img style="width: 50px;" src="image-programs/4.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 50px;" src="image-programs/10.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 35px;" src="image-programs/11.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 70px;" src="image-programs/1.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 50px;" src="image-programs/13.jpg"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 50px;" src="image-programs/5.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 50px;" src="image-programs/8.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 50px;" src="image-programs/2.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 40px;" src="image-programs/7.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 60px;" src="image-programs/6.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 45px;" src="image-programs/12.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 40px;" src="image-programs/3.png"></a></li>
+              <li><a class="special-link" href="#"><img style="width: 40px;" src="image-programs/9.png"></a></li>
+            </ul>
+          </div>       
+      </div>
+      
+      <div class="bottom"><a class="special-link" href="#gallary">↓</a></div>
+    </div>
+    
+    <div style="overflow:auto; display:flex; height: 100%; align-items: center; ">
+      <div class="menu">
+        <a href="#">Characters</a>
+        <a href="#">Crafts</a>
+        <a href="#">Clothes</a>
+        <a href="#">Environnement</a>
+        <a href="#">Interiors</a>
+        <a href="#">Visual Effects</a>
+        <a href="#">Rendering</a>
+        <a href="#">Visualization</a> 
+        <a href="#">Animation</a>
+      </div>
+    
+      <div class="main">
+        <div class="tags" id="gallary"> 
+          <ul>                 
+
+              <li><a class="tags-special-link" href="#"><img style="width: 50px;" src="image-programs/4.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 50px;" src="image-programs/10.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 35px;" src="image-programs/11.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 70px;" src="image-programs/1.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 50px;" src="image-programs/13.jpg"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 50px;" src="image-programs/5.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 50px;" src="image-programs/8.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 50px;" src="image-programs/2.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 40px;" src="image-programs/7.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 60px;" src="image-programs/6.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 45px;" src="image-programs/12.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 40px;" src="image-programs/3.png"></a></li>
+              <li><a class="tags-special-link" href="#"><img style="width: 40px;" src="image-programs/9.png"></a></li>
+          </ul>  
+        </div>
+        
+        J'ai quelques questions.
+        La première question est, dans quelle ville et comment se déroule la formation à distance ou sur place ?
+        
+        Deuxième question, vous avez écrit qu'il faut payer l'avance à réception de l'AES de 3489€, c'est ça ? !
+        
+        Et la dernière chose que mon conseiller a dit qu'ils intervenent qu'en dernier recours. D'abord vous devriez à demander de faire une demande de financement AIRE2 auprès de la région. 
+
+
+        <div class="row row-cols-1 row-cols-md-6 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer . </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer .</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer .</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer .</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer .</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer .</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer .</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer . </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer . </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card .</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card.</p>
+                  </div>
+                </div>
+              </div>
+          </div> 
+          <div style="padding: 30px 0 10px 0; text-align: center; color: black;">
+            <p>Find more - ></p>
+          </div>
+      </div>
+    
+      <div class="right">
+        <img style="width: 160px; padding-bottom: 15px;" src="https://static.zerochan.net/Amaha.Tsubasa.full.125585.jpg" alt="Account" class="img-account-menu" >
+          
+        <h2 style="text-align: center; color: rgba(0, 0, 0, 0.5);">3D Artist</h2>
+        <p>Tetiana LUHACHEVA</p>
+      </div>
+    </div>
+    
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
+        © copyright w3schools.com
+    </div>
+      
+    </div>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

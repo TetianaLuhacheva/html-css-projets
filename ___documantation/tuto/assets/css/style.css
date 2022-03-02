@@ -1,0 +1,233 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Medium.ttf');
+	font-weight: 500; 
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf');
+	font-weight: 100; 
+}
+
+body {
+	font-family: 'Roboto';
+	font-weight: 100;
+	margin: 0;
+}
+
+nav {
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
+nav > div {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+nav .left {
+	width: 70%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+nav .left img {
+	height: 1.5rem;
+}
+
+nav .left a {
+	color: black;
+	text-decoration: none;
+}
+
+nav .rigth {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav .rigth > ion-icon {
+	font-size: 1.5rem;
+}
+
+nav .rigth > div {
+	width: 3.5rem;
+	height: 75%;
+	padding-left: 0.2rem;
+	padding-right: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 5rem;
+	border: 1px solid rgb(190, 190, 190);
+}
+
+nav .rigth > div .profilPic {
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2rem;
+	background: #40bbbf;
+}
+
+nav .rigth > div .profilPic p {
+	margin: 0;
+	font-size: 0.7rem;
+	color: white;
+}
+
+header {
+	width: 100%;
+	height: 11.5rem;
+	display: flex;
+	justify-content: center;
+	color: white;
+	background: #7451eb;
+}
+
+header > div {
+	width: 50%;
+	height: calc(100% - 0.6rem);
+	padding: 0.3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header > div > * {
+	margin: 0;
+}
+
+header > div p {
+	margin-top: 1rem;
+	font-size: 0.8rem;
+}
+
+header > div span {
+	font-weight: 800;
+}
+
+header > div > h1 {
+	align-self: center;
+	font-size: 1.8rem;
+	letter-spacing: 0.3rem;
+}
+
+header .bottom {
+	width: 90%;
+	height: 1.5rem;
+	align-self: flex-end;
+	display: flex;
+	justify-content: space-between;
+}
+
+header .bottom .left {
+	width: 13rem;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header .bottom .left div {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 1.3rem;
+}
+
+header .bottom .left p {
+	margin: 0;
+}
+
+header .bottom .rigth {
+	width: 10rem;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+header .bottom .rigth p {
+	margin: 0;
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 40%;
+	display: flex;
+}
+
+.container .article {
+	width: 75%;
+	background: red;	
+}
+
+.container .forum {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+}
+
+.container .forum > div {
+	width: 90%;
+	height: 25rem;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	box-shadow: rgb(121 121 121 / 35%) 1px 10px 20px;
+}
+
+.container .forum button {
+	border: 1px solid #7451ea;
+	border-radius: 0.2rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	color: #7451ea;
+	background: none;
+}
+
+.container .forum .content {
+	background: blue;
+}
+
+.container .forum .contact {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container .forum .contact div {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 1.5rem;
+	background: rgba(130,130,130,.6);
+}

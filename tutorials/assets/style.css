@@ -1,0 +1,262 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Medium.ttf');
+	font-weight: 500; 
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf');
+	font-weight: 100; 
+}
+body {
+    font-family: 'Roboto';	
+    font-weight: 100;
+	margin: 0;
+}
+
+nav {
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 5px 50px black;
+}
+
+nav > ul {
+	height: 100%;
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav > div {
+	height: 100%;
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav .right > div .profilPic p{
+    margin : 0;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#profilPic {
+	height: 3rem;
+	width: 3rem;
+	border-radius: 5rem;
+	background: cyan;	
+}
+
+nav .left {
+	width: 70%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+nav .left img {
+	height: 1.5rem;
+}
+
+nav .left a {
+	color: black;
+	text-decoration: none;
+}
+
+nav .rigth {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav .rigth > ion-icon {
+	font-size: 1.5rem;
+}
+
+nav .rigth > div {
+	width: 3.5rem;
+	height: 75%;
+	padding-left: 0.2rem;
+	padding-right: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 5rem;
+	border: 1px solid rgb(190, 190, 190);
+}
+
+nav .rigth > div .profilPic {
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2rem;
+	background: #40bbbf;
+}
+
+nav .rigth > div .profilPic p {
+	margin: 0;
+	font-size: 0.7rem;
+	color: white;
+}
+
+header{
+    width: 100%;	
+    height: 11.5rem;
+    display: flex;
+    justify-content: center;
+    background: rebeccapurple;
+}
+
+header > div {
+    width: 50%;
+    height: calc(100%-0.6rem);
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+header > div > * {
+    margin: 0;
+}
+
+header > div > p {
+    margin-top: 1rem;
+}
+header > div > span {
+    margin-top: 0.8rem;
+}
+header > div > h1 {
+    align-self: center;
+}
+
+header .bottom{
+    width: 90%;
+    height: 1.5rem;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+header .bottom .left{
+    width: 13rem;
+    height: 100%; 
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+header .bottom .left div{
+    width: 40%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;    
+}
+
+
+header .bottom .left p{
+   margin: 0;
+    
+}
+
+header .bottom .right{
+    width: 10rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;    
+}
+
+
+header .bottom .right p{
+    margin: 0;
+ }
+ 
+
+ .content{ 
+    width: 100%;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+}
+ .container{
+     width: 40%;
+     height: 5rem;
+     background: rgb(167, 112, 211);
+ }
+
+ .content .article {
+     width: 75%;
+     background: rgb(77, 221, 125);
+
+ }
+ .content .forum {
+     width: 25%; 
+     display: flex;
+     justify-content: center;
+     background: red;
+     
+ }
+ .content .forum > div {
+     width: 90%;
+     height: 25rem;
+     margin-top: 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     box-shadow: rgb(121 121 121 / 35%)1px 10px 20px;
+     
+ }
+ .content .forum > button {
+    border: 1px solid #663399;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    background: greenyellow;
+    background: none;
+
+ }
+ .content .forum > .content {
+    background: rgb(92, 103, 165);
+
+ } 
+.content .forum > .contact { 
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.content .forum > .contact div {
+    width: 3rem;
+    height: 2rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+     
+ }
